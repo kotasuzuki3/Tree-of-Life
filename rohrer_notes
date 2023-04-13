@@ -1,0 +1,130 @@
+# accessing QUEST
+ssh csm6359@quest.northwestern.edu
+cd /projects/p31966/
+
+# exiting back to home directory and creating new folder 
+mkdir rohrer 
+cd rohrer
+
+# running curl commands 
+curl -L ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR174/089/SRR17438189/SRR17438189_1.fastq.gz -o SRR17438189_Galapagos_Penguin_Gut_Microbiome_1.fastq.gz
+curl -L ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR174/089/SRR17438189/SRR17438189_2.fastq.gz -o SRR17438189_Galapagos_Penguin_Gut_Microbiome_2.fastq.gz
+curl -L ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR174/087/SRR17438187/SRR17438187_1.fastq.gz -o SRR17438187_Galapagos_Penguin_Gut_Microbiome_1.fastq.gz
+curl -L ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR174/087/SRR17438187/SRR17438187_2.fastq.gz -o SRR17438187_Galapagos_Penguin_Gut_Microbiome_2.fastq.gz
+curl -L ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR174/091/SRR17438191/SRR17438191_1.fastq.gz -o SRR17438191_Galapagos_Penguin_Gut_Microbiome_1.fastq.gz
+curl -L ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR174/091/SRR17438191/SRR17438191_2.fastq.gz -o SRR17438191_Galapagos_Penguin_Gut_Microbiome_2.fastq.gz
+curl -L ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR174/090/SRR17438190/SRR17438190_1.fastq.gz -o SRR17438190_Galapagos_Penguin_Gut_Microbiome_1.fastq.gz
+curl -L ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR174/090/SRR17438190/SRR17438190_2.fastq.gz -o SRR17438190_Galapagos_Penguin_Gut_Microbiome_2.fastq.gz
+curl -L ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR174/092/SRR17438192/SRR17438192_1.fastq.gz -o SRR17438192_Galapagos_Penguin_Gut_Microbiome_1.fastq.gz
+curl -L ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR174/092/SRR17438192/SRR17438192_2.fastq.gz -o SRR17438192_Galapagos_Penguin_Gut_Microbiome_2.fastq.gz
+curl -L ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR174/093/SRR17438193/SRR17438193_1.fastq.gz -o SRR17438193_Galapagos_Penguin_Gut_Microbiome_1.fastq.gz
+curl -L ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR174/093/SRR17438193/SRR17438193_2.fastq.gz -o SRR17438193_Galapagos_Penguin_Gut_Microbiome_2.fastq.gz
+curl -L ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR174/088/SRR17438188/SRR17438188_1.fastq.gz -o SRR17438188_Galapagos_Penguin_Gut_Microbiome_1.fastq.gz
+curl -L ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR174/088/SRR17438188/SRR17438188_2.fastq.gz -o SRR17438188_Galapagos_Penguin_Gut_Microbiome_2.fastq.gz
+curl -L ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR174/086/SRR17438186/SRR17438186_1.fastq.gz -o SRR17438186_Galapagos_Penguin_Gut_Microbiome_1.fastq.gz
+curl -L ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR174/086/SRR17438186/SRR17438186_2.fastq.gz -o SRR17438186_Galapagos_Penguin_Gut_Microbiome_2.fastq.gz
+curl -L ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR174/085/SRR17438185/SRR17438185_1.fastq.gz -o SRR17438185_Galapagos_Penguin_Gut_Microbiome_1.fastq.gz
+curl -L ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR174/085/SRR17438185/SRR17438185_2.fastq.gz -o SRR17438185_Galapagos_Penguin_Gut_Microbiome_2.fastq.gz
+curl -L ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR174/083/SRR17438183/SRR17438183_1.fastq.gz -o SRR17438183_Galapagos_Penguin_Gut_Microbiome_1.fastq.gz
+curl -L ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR174/083/SRR17438183/SRR17438183_2.fastq.gz -o SRR17438183_Galapagos_Penguin_Gut_Microbiome_2.fastq.gz
+curl -L ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR174/082/SRR17438182/SRR17438182_1.fastq.gz -o SRR17438182_Galapagos_Penguin_Gut_Microbiome_1.fastq.gz
+curl -L ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR174/082/SRR17438182/SRR17438182_2.fastq.gz -o SRR17438182_Galapagos_Penguin_Gut_Microbiome_2.fastq.gz
+curl -L ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR174/084/SRR17438184/SRR17438184_1.fastq.gz -o SRR17438184_Galapagos_Penguin_Gut_Microbiome_1.fastq.gz
+curl -L ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR174/084/SRR17438184/SRR17438184_2.fastq.gz -o SRR17438184_Galapagos_Penguin_Gut_Microbiome_2.fastq.gz
+curl -L ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR174/080/SRR17438180/SRR17438180_1.fastq.gz -o SRR17438180_Galapagos_Penguin_Gut_Microbiome_1.fastq.gz
+curl -L ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR174/080/SRR17438180/SRR17438180_2.fastq.gz -o SRR17438180_Galapagos_Penguin_Gut_Microbiome_2.fastq.gz
+curl -L ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR174/081/SRR17438181/SRR17438181_1.fastq.gz -o SRR17438181_Galapagos_Penguin_Gut_Microbiome_1.fastq.gz
+curl -L ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR174/081/SRR17438181/SRR17438181_2.fastq.gz -o SRR17438181_Galapagos_Penguin_Gut_Microbiome_2.fastq.gz
+curl -L ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR174/079/SRR17438179/SRR17438179_1.fastq.gz -o SRR17438179_Galapagos_Penguin_Gut_Microbiome_1.fastq.gz
+curl -L ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR174/079/SRR17438179/SRR17438179_2.fastq.gz -o SRR17438179_Galapagos_Penguin_Gut_Microbiome_2.fastq.gz
+curl -L ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR174/078/SRR17438178/SRR17438178_1.fastq.gz -o SRR17438178_Galapagos_Penguin_Gut_Microbiome_1.fastq.gz
+curl -L ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR174/078/SRR17438178/SRR17438178_2.fastq.gz -o SRR17438178_Galapagos_Penguin_Gut_Microbiome_2.fastq.gz
+curl -L ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR174/077/SRR17438177/SRR17438177_1.fastq.gz -o SRR17438177_Galapagos_Penguin_Gut_Microbiome_1.fastq.gz
+curl -L ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR174/077/SRR17438177/SRR17438177_2.fastq.gz -o SRR17438177_Galapagos_Penguin_Gut_Microbiome_2.fastq.gz
+curl -L ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR174/076/SRR17438176/SRR17438176_1.fastq.gz -o SRR17438176_Galapagos_Penguin_Gut_Microbiome_1.fastq.gz
+curl -L ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR174/076/SRR17438176/SRR17438176_2.fastq.gz -o SRR17438176_Galapagos_Penguin_Gut_Microbiome_2.fastq.gz
+curl -L ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR174/075/SRR17438175/SRR17438175_1.fastq.gz -o SRR17438175_Galapagos_Penguin_Gut_Microbiome_1.fastq.gz
+curl -L ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR174/075/SRR17438175/SRR17438175_2.fastq.gz -o SRR17438175_Galapagos_Penguin_Gut_Microbiome_2.fastq.gz
+curl -L ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR174/074/SRR17438174/SRR17438174_1.fastq.gz -o SRR17438174_Galapagos_Penguin_Gut_Microbiome_1.fastq.gz
+curl -L ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR174/074/SRR17438174/SRR17438174_2.fastq.gz -o SRR17438174_Galapagos_Penguin_Gut_Microbiome_2.fastq.gz
+curl -L ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR174/073/SRR17438173/SRR17438173_1.fastq.gz -o SRR17438173_Galapagos_Penguin_Gut_Microbiome_1.fastq.gz
+curl -L ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR174/073/SRR17438173/SRR17438173_2.fastq.gz -o SRR17438173_Galapagos_Penguin_Gut_Microbiome_2.fastq.gz
+curl -L ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR174/072/SRR17438172/SRR17438172_1.fastq.gz -o SRR17438172_Galapagos_Penguin_Gut_Microbiome_1.fastq.gz
+curl -L ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR174/072/SRR17438172/SRR17438172_2.fastq.gz -o SRR17438172_Galapagos_Penguin_Gut_Microbiome_2.fastq.gz
+curl -L ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR174/070/SRR17438170/SRR17438170_1.fastq.gz -o SRR17438170_Galapagos_Penguin_Gut_Microbiome_1.fastq.gz
+curl -L ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR174/070/SRR17438170/SRR17438170_2.fastq.gz -o SRR17438170_Galapagos_Penguin_Gut_Microbiome_2.fastq.gz
+curl -L ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR174/071/SRR17438171/SRR17438171_1.fastq.gz -o SRR17438171_Galapagos_Penguin_Gut_Microbiome_1.fastq.gz
+curl -L ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR174/071/SRR17438171/SRR17438171_2.fastq.gz -o SRR17438171_Galapagos_Penguin_Gut_Microbiome_2.fastq.gz
+curl -L ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR174/067/SRR17438167/SRR17438167_1.fastq.gz -o SRR17438167_Galapagos_Penguin_Gut_Microbiome_1.fastq.gz
+curl -L ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR174/067/SRR17438167/SRR17438167_2.fastq.gz -o SRR17438167_Galapagos_Penguin_Gut_Microbiome_2.fastq.gz
+curl -L ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR174/066/SRR17438166/SRR17438166_1.fastq.gz -o SRR17438166_Galapagos_Penguin_Gut_Microbiome_1.fastq.gz
+curl -L ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR174/066/SRR17438166/SRR17438166_2.fastq.gz -o SRR17438166_Galapagos_Penguin_Gut_Microbiome_2.fastq.gz
+curl -L ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR174/069/SRR17438169/SRR17438169_1.fastq.gz -o SRR17438169_Galapagos_Penguin_Gut_Microbiome_1.fastq.gz
+curl -L ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR174/069/SRR17438169/SRR17438169_2.fastq.gz -o SRR17438169_Galapagos_Penguin_Gut_Microbiome_2.fastq.gz
+curl -L ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR174/068/SRR17438168/SRR17438168_1.fastq.gz -o SRR17438168_Galapagos_Penguin_Gut_Microbiome_1.fastq.gz
+curl -L ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR174/068/SRR17438168/SRR17438168_2.fastq.gz -o SRR17438168_Galapagos_Penguin_Gut_Microbiome_2.fastq.gz
+curl -L ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR174/065/SRR17438165/SRR17438165_1.fastq.gz -o SRR17438165_Galapagos_Penguin_Gut_Microbiome_1.fastq.gz
+curl -L ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR174/065/SRR17438165/SRR17438165_2.fastq.gz -o SRR17438165_Galapagos_Penguin_Gut_Microbiome_2.fastq.gz
+curl -L ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR174/064/SRR17438164/SRR17438164_1.fastq.gz -o SRR17438164_Galapagos_Penguin_Gut_Microbiome_1.fastq.gz
+curl -L ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR174/064/SRR17438164/SRR17438164_2.fastq.gz -o SRR17438164_Galapagos_Penguin_Gut_Microbiome_2.fastq.gz
+
+
+# making manifest file 
+ls
+ls -d "$PWD/"*_1*
+ls -d "$PWD/"*_2*
+vim rohrermanifest.txt
+
+# SRUN 
+srun --account=p31966 --time=2:00:00 --partition=short --mem=4G --pty bash -l
+
+# Load Qiime2 and import
+module avail
+module load qiime2/2022.8
+
+# getting demux.qza 
+qiime tools import \
+  --type 'SampleData[PairedEndSequencesWithQuality]' \
+  --input-path rohrermanifest.txt \
+  --output-path paired-end-demux-rohrer.qza \
+  --input-format PairedEndFastqManifestPhred33V2
+
+# and .qzv file 
+qiime demux summarize \
+  --i-data paired-end-demux-rohrer.qza \
+  --o-visualization paired-end-demux-rohrer.qzv
+
+# Run dada2 
+vim rohrerdada2.sh
+
+#!/bin/bash
+#SBATCH -J dada2
+#SBATCH --mail-type=ALL
+#SBATCH -A p31966
+#SBATCH --mail-user=collegiatesuzuki2025@u.northwestern.edu
+#SBATCH -N 1
+#SBATCH -n 6
+#SBATCH --mem=24G
+#SBATCH -t 48:00:00
+#SBATCH -p normal
+#SBATCH --output=output.log  
+
+module purge all
+module load qiime2/2022.8 
+
+qiime dada2 denoise-paired \
+--i-demultiplexed-seqs paired-end-demux-rohrer.qza \
+--p-trunc-len-f 150 \
+--p-trunc-len-r 150 \
+--p-trim-left-f 0 \
+--p-trim-left-r 0 \
+--p-n-threads 0 \
+--o-representative-sequences rep-seqs-dada-rohrer.qza \
+--o-table table-rohrer.qza \
+--o-denoising-stats stats-dada-rohrer.qza
+
+echo "Finishing dada2 job"
+
+:wq
+chmod u+x rohrerdada2.sh
+sbatch rohrerdada2.sh
