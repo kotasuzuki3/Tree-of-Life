@@ -1,0 +1,88 @@
+# accessing QUEST
+ssh csm6359@quest.northwestern.edu
+cd /projects/p31966/
+
+# exiting back to home directory and creating new folder 
+mkdir ooi 
+cd ooi
+
+# running curl commands 
+curl -L ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR589/004/SRR5891444/SRR5891444.fastq.gz -o SRR5891444_16S_metagenomic_of_Panulirus_ornatus_gut.fastq.gz
+curl -L ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR589/007/SRR5891447/SRR5891447.fastq.gz -o SRR5891447_16S_metagenomic_of_Panulirus_ornatus_gut.fastq.gz
+curl -L ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR589/006/SRR5891446/SRR5891446.fastq.gz -o SRR5891446_16S_metagenomic_of_Panulirus_ornatus_gut.fastq.gz
+curl -L ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR589/002/SRR5891442/SRR5891442.fastq.gz -o SRR5891442_16S_metagenomic_of_Panulirus_ornatus_gut.fastq.gz
+curl -L ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR589/005/SRR5891445/SRR5891445.fastq.gz -o SRR5891445_16S_metagenomic_of_Panulirus_ornatus_gut.fastq.gz
+curl -L ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR589/003/SRR5891443/SRR5891443.fastq.gz -o SRR5891443_16S_metagenomic_of_Panulirus_ornatus_gut.fastq.gz
+curl -L ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR589/007/SRR5891437/SRR5891437.fastq.gz -o SRR5891437_16S_metagenomic_of_Panulirus_ornatus_gut.fastq.gz
+curl -L ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR589/000/SRR5891440/SRR5891440.fastq.gz -o SRR5891440_16S_metagenomic_of_Panulirus_ornatus_gut.fastq.gz
+curl -L ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR589/009/SRR5891439/SRR5891439.fastq.gz -o SRR5891439_16S_metagenomic_of_Panulirus_ornatus_gut.fastq.gz
+curl -L ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR589/008/SRR5891438/SRR5891438.fastq.gz -o SRR5891438_16S_metagenomic_of_Panulirus_ornatus_gut.fastq.gz
+curl -L ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR589/006/SRR5891436/SRR5891436.fastq.gz -o SRR5891436_16S_metagenomic_of_Panulirus_ornatus_gut.fastq.gz
+curl -L ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR589/001/SRR5891441/SRR5891441.fastq.gz -o SRR5891441_16S_metagenomic_of_Panulirus_ornatus_gut.fastq.gz
+curl -L ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR589/004/SRR5891434/SRR5891434.fastq.gz -o SRR5891434_16S_metagenomic_of_Panulirus_ornatus_gut.fastq.gz
+curl -L ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR589/003/SRR5891433/SRR5891433.fastq.gz -o SRR5891433_16S_metagenomic_of_Panulirus_ornatus_gut.fastq.gz
+curl -L ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR589/005/SRR5891435/SRR5891435.fastq.gz -o SRR5891435_16S_metagenomic_of_Panulirus_ornatus_gut.fastq.gz
+curl -L ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR589/000/SRR5891430/SRR5891430.fastq.gz -o SRR5891430_16S_metagenomic_of_Panulirus_ornatus_gut.fastq.gz
+curl -L ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR589/001/SRR5891431/SRR5891431.fastq.gz -o SRR5891431_16S_metagenomic_of_Panulirus_ornatus_gut.fastq.gz
+curl -L ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR589/002/SRR5891432/SRR5891432.fastq.gz -o SRR5891432_16S_metagenomic_of_Panulirus_ornatus_gut.fastq.gz
+
+# making manifest file 
+ls -d "$PWD/"*_1*
+ls -d "$PWD/"*_2*
+vim ooimanifest.txt
+
+# SRUN 
+srun --account=p31966 --time=2:00:00 --partition=short --mem=4G --pty bash -l
+
+# Load Qiime2 and import
+module avail
+module load qiime2/2022.8
+
+# getting demux.qza 
+qiime tools import \
+  --type 'SampleData[SequencesWithQuality]' \
+  --input-path ooimanifest.txt\
+  --output-path single-end-demux-ooi.qza \
+  --input-format SingleEndFastqManifestPhred33V2
+
+# and .qzv file 
+  qiime demux summarize \
+  --i-data single-end-demux-ooi.qza \
+  --o-visualization single-end-demux-ooi.qzv
+
+# Run dada2 
+vim ooidada2.sh
+
+#!/bin/bash
+#SBATCH -J dada2
+#SBATCH --mail-type=ALL
+#SBATCH -A p31966
+#SBATCH --mail-user=collegiatesuzuki2025@u.northwestern.edu
+#SBATCH -N 1
+#SBATCH -n 6
+#SBATCH --mem=24G
+#SBATCH -t 48:00:00
+#SBATCH -p normal
+#SBATCH --output=output.log  
+
+module purge all
+module load qiime2/2022.8 
+
+qiime dada2 denoise-single \
+  --i-demultiplexed-seqs single-end-demux-ooi.qza \
+  --p-trim-left 0 \
+  --p-trunc-len 150 \
+  --o-representative-sequences rep-seqs-ooi.qza \
+  --o-table table-ooi.qza \
+  --o-denoising-stats stats-ooi.qza
+
+echo "Finishing dada2 job"
+
+:wq
+chmod u+x ooidada2.sh
+sbatch ooidada2.sh
+
+# moving the folder to directory
+mkdir /projects/p31966/ooi
+mv ooi/* /projects/p31966/ooi
+
