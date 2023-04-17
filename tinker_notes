@@ -1,0 +1,132 @@
+# accessing QUEST
+ssh csm6359@quest.northwestern.edu
+cd /projects/p31966/
+
+# exiting back to home directory and creating new folder 
+mkdir tinker 
+cd tinker
+
+# running curl commands 
+curl -L ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR673/009/SRR6737279/SRR6737279_1.fastq.gz -o SRR6737279_16S_rRNA_gene_sequencing_of_gut_microbiota_from_insects_1.fastq.gz
+curl -L ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR673/009/SRR6737279/SRR6737279_2.fastq.gz -o SRR6737279_16S_rRNA_gene_sequencing_of_gut_microbiota_from_insects_2.fastq.gz
+curl -L ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR673/002/SRR6737282/SRR6737282_1.fastq.gz -o SRR6737282_16S_rRNA_gene_sequencing_of_gut_microbiota_from_insects_1.fastq.gz
+curl -L ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR673/002/SRR6737282/SRR6737282_2.fastq.gz -o SRR6737282_16S_rRNA_gene_sequencing_of_gut_microbiota_from_insects_2.fastq.gz
+curl -L ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR673/007/SRR6737277/SRR6737277_1.fastq.gz -o SRR6737277_16S_rRNA_gene_sequencing_of_gut_microbiota_from_insects_1.fastq.gz
+curl -L ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR673/007/SRR6737277/SRR6737277_2.fastq.gz -o SRR6737277_16S_rRNA_gene_sequencing_of_gut_microbiota_from_insects_2.fastq.gz
+curl -L ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR673/008/SRR6737278/SRR6737278_1.fastq.gz -o SRR6737278_16S_rRNA_gene_sequencing_of_gut_microbiota_from_insects_1.fastq.gz
+curl -L ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR673/008/SRR6737278/SRR6737278_2.fastq.gz -o SRR6737278_16S_rRNA_gene_sequencing_of_gut_microbiota_from_insects_2.fastq.gz
+curl -L ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR673/000/SRR6737280/SRR6737280_1.fastq.gz -o SRR6737280_16S_rRNA_gene_sequencing_of_gut_microbiota_from_insects_1.fastq.gz
+curl -L ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR673/000/SRR6737280/SRR6737280_2.fastq.gz -o SRR6737280_16S_rRNA_gene_sequencing_of_gut_microbiota_from_insects_2.fastq.gz
+curl -L ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR673/001/SRR6737281/SRR6737281_1.fastq.gz -o SRR6737281_16S_rRNA_gene_sequencing_of_gut_microbiota_from_insects_1.fastq.gz
+curl -L ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR673/001/SRR6737281/SRR6737281_2.fastq.gz -o SRR6737281_16S_rRNA_gene_sequencing_of_gut_microbiota_from_insects_2.fastq.gz
+curl -L ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR673/004/SRR6737274/SRR6737274_1.fastq.gz -o SRR6737274_16S_rRNA_gene_sequencing_of_gut_microbiota_from_insects_1.fastq.gz
+curl -L ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR673/004/SRR6737274/SRR6737274_2.fastq.gz -o SRR6737274_16S_rRNA_gene_sequencing_of_gut_microbiota_from_insects_2.fastq.gz
+curl -L ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR673/006/SRR6737276/SRR6737276_1.fastq.gz -o SRR6737276_16S_rRNA_gene_sequencing_of_gut_microbiota_from_insects_1.fastq.gz
+curl -L ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR673/006/SRR6737276/SRR6737276_2.fastq.gz -o SRR6737276_16S_rRNA_gene_sequencing_of_gut_microbiota_from_insects_2.fastq.gz
+curl -L ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR673/005/SRR6737275/SRR6737275_1.fastq.gz -o SRR6737275_16S_rRNA_gene_sequencing_of_gut_microbiota_from_insects_1.fastq.gz
+curl -L ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR673/005/SRR6737275/SRR6737275_2.fastq.gz -o SRR6737275_16S_rRNA_gene_sequencing_of_gut_microbiota_from_insects_2.fastq.gz
+curl -L ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR673/002/SRR6737272/SRR6737272_1.fastq.gz -o SRR6737272_16S_rRNA_gene_sequencing_of_gut_microbiota_from_insects_1.fastq.gz
+curl -L ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR673/002/SRR6737272/SRR6737272_2.fastq.gz -o SRR6737272_16S_rRNA_gene_sequencing_of_gut_microbiota_from_insects_2.fastq.gz
+curl -L ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR673/001/SRR6737271/SRR6737271_1.fastq.gz -o SRR6737271_16S_rRNA_gene_sequencing_of_gut_microbiota_from_insects_1.fastq.gz
+curl -L ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR673/001/SRR6737271/SRR6737271_2.fastq.gz -o SRR6737271_16S_rRNA_gene_sequencing_of_gut_microbiota_from_insects_2.fastq.gz
+curl -L ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR673/003/SRR6737273/SRR6737273_1.fastq.gz -o SRR6737273_16S_rRNA_gene_sequencing_of_gut_microbiota_from_insects_1.fastq.gz
+curl -L ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR673/003/SRR6737273/SRR6737273_2.fastq.gz -o SRR6737273_16S_rRNA_gene_sequencing_of_gut_microbiota_from_insects_2.fastq.gz
+curl -L ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR673/000/SRR6737270/SRR6737270_1.fastq.gz -o SRR6737270_16S_rRNA_gene_sequencing_of_gut_microbiota_from_insects_1.fastq.gz
+curl -L ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR673/000/SRR6737270/SRR6737270_2.fastq.gz -o SRR6737270_16S_rRNA_gene_sequencing_of_gut_microbiota_from_insects_2.fastq.gz
+curl -L ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR673/008/SRR6737268/SRR6737268_1.fastq.gz -o SRR6737268_16S_rRNA_gene_sequencing_of_gut_microbiota_from_insects_1.fastq.gz
+curl -L ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR673/008/SRR6737268/SRR6737268_2.fastq.gz -o SRR6737268_16S_rRNA_gene_sequencing_of_gut_microbiota_from_insects_2.fastq.gz
+curl -L ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR673/009/SRR6737269/SRR6737269_1.fastq.gz -o SRR6737269_16S_rRNA_gene_sequencing_of_gut_microbiota_from_insects_1.fastq.gz
+curl -L ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR673/009/SRR6737269/SRR6737269_2.fastq.gz -o SRR6737269_16S_rRNA_gene_sequencing_of_gut_microbiota_from_insects_2.fastq.gz
+curl -L ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR673/007/SRR6737267/SRR6737267_1.fastq.gz -o SRR6737267_16S_rRNA_gene_sequencing_of_gut_microbiota_from_insects_1.fastq.gz
+curl -L ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR673/007/SRR6737267/SRR6737267_2.fastq.gz -o SRR6737267_16S_rRNA_gene_sequencing_of_gut_microbiota_from_insects_2.fastq.gz
+curl -L ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR673/005/SRR6737265/SRR6737265_1.fastq.gz -o SRR6737265_16S_rRNA_gene_sequencing_of_gut_microbiota_from_insects_1.fastq.gz
+curl -L ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR673/005/SRR6737265/SRR6737265_2.fastq.gz -o SRR6737265_16S_rRNA_gene_sequencing_of_gut_microbiota_from_insects_2.fastq.gz
+curl -L ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR673/006/SRR6737266/SRR6737266_1.fastq.gz -o SRR6737266_16S_rRNA_gene_sequencing_of_gut_microbiota_from_insects_1.fastq.gz
+curl -L ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR673/006/SRR6737266/SRR6737266_2.fastq.gz -o SRR6737266_16S_rRNA_gene_sequencing_of_gut_microbiota_from_insects_2.fastq.gz
+curl -L ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR673/001/SRR6737261/SRR6737261_1.fastq.gz -o SRR6737261_16S_rRNA_gene_sequencing_of_gut_microbiota_from_insects_1.fastq.gz
+curl -L ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR673/001/SRR6737261/SRR6737261_2.fastq.gz -o SRR6737261_16S_rRNA_gene_sequencing_of_gut_microbiota_from_insects_2.fastq.gz
+curl -L ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR673/004/SRR6737264/SRR6737264_1.fastq.gz -o SRR6737264_16S_rRNA_gene_sequencing_of_gut_microbiota_from_insects_1.fastq.gz
+curl -L ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR673/004/SRR6737264/SRR6737264_2.fastq.gz -o SRR6737264_16S_rRNA_gene_sequencing_of_gut_microbiota_from_insects_2.fastq.gz
+curl -L ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR673/000/SRR6737260/SRR6737260_1.fastq.gz -o SRR6737260_16S_rRNA_gene_sequencing_of_gut_microbiota_from_insects_1.fastq.gz
+curl -L ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR673/000/SRR6737260/SRR6737260_2.fastq.gz -o SRR6737260_16S_rRNA_gene_sequencing_of_gut_microbiota_from_insects_2.fastq.gz
+curl -L ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR673/009/SRR6737259/SRR6737259_1.fastq.gz -o SRR6737259_16S_rRNA_gene_sequencing_of_gut_microbiota_from_insects_1.fastq.gz
+curl -L ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR673/009/SRR6737259/SRR6737259_2.fastq.gz -o SRR6737259_16S_rRNA_gene_sequencing_of_gut_microbiota_from_insects_2.fastq.gz
+curl -L ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR673/003/SRR6737263/SRR6737263_1.fastq.gz -o SRR6737263_16S_rRNA_gene_sequencing_of_gut_microbiota_from_insects_1.fastq.gz
+curl -L ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR673/003/SRR6737263/SRR6737263_2.fastq.gz -o SRR6737263_16S_rRNA_gene_sequencing_of_gut_microbiota_from_insects_2.fastq.gz
+curl -L ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR673/002/SRR6737262/SRR6737262_1.fastq.gz -o SRR6737262_16S_rRNA_gene_sequencing_of_gut_microbiota_from_insects_1.fastq.gz
+curl -L ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR673/002/SRR6737262/SRR6737262_2.fastq.gz -o SRR6737262_16S_rRNA_gene_sequencing_of_gut_microbiota_from_insects_2.fastq.gz
+curl -L ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR673/008/SRR6737258/SRR6737258_1.fastq.gz -o SRR6737258_16S_rRNA_gene_sequencing_of_gut_microbiota_from_insects_1.fastq.gz
+curl -L ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR673/008/SRR6737258/SRR6737258_2.fastq.gz -o SRR6737258_16S_rRNA_gene_sequencing_of_gut_microbiota_from_insects_2.fastq.gz
+curl -L ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR673/006/SRR6737256/SRR6737256_1.fastq.gz -o SRR6737256_16S_rRNA_gene_sequencing_of_gut_microbiota_from_insects_1.fastq.gz
+curl -L ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR673/006/SRR6737256/SRR6737256_2.fastq.gz -o SRR6737256_16S_rRNA_gene_sequencing_of_gut_microbiota_from_insects_2.fastq.gz
+curl -L ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR673/005/SRR6737255/SRR6737255_1.fastq.gz -o SRR6737255_16S_rRNA_gene_sequencing_of_gut_microbiota_from_insects_1.fastq.gz
+curl -L ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR673/005/SRR6737255/SRR6737255_2.fastq.gz -o SRR6737255_16S_rRNA_gene_sequencing_of_gut_microbiota_from_insects_2.fastq.gz
+curl -L ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR673/003/SRR6737253/SRR6737253_1.fastq.gz -o SRR6737253_16S_rRNA_gene_sequencing_of_gut_microbiota_from_insects_1.fastq.gz
+curl -L ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR673/003/SRR6737253/SRR6737253_2.fastq.gz -o SRR6737253_16S_rRNA_gene_sequencing_of_gut_microbiota_from_insects_2.fastq.gz
+curl -L ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR673/007/SRR6737257/SRR6737257_1.fastq.gz -o SRR6737257_16S_rRNA_gene_sequencing_of_gut_microbiota_from_insects_1.fastq.gz
+curl -L ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR673/007/SRR6737257/SRR6737257_2.fastq.gz -o SRR6737257_16S_rRNA_gene_sequencing_of_gut_microbiota_from_insects_2.fastq.gz
+curl -L ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR673/004/SRR6737254/SRR6737254_1.fastq.gz -o SRR6737254_16S_rRNA_gene_sequencing_of_gut_microbiota_from_insects_1.fastq.gz
+curl -L ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR673/004/SRR6737254/SRR6737254_2.fastq.gz -o SRR6737254_16S_rRNA_gene_sequencing_of_gut_microbiota_from_insects_2.fastq.gz
+
+# making manifest file 
+ls -d "$PWD/"*insects_1*
+ls -d "$PWD/"*insects_2*
+vim tinkermanifest.txt
+
+# SRUN 
+srun --account=p31966 --time=2:00:00 --partition=short --mem=4G --pty bash -l
+
+# Load Qiime2 and import
+module avail
+module load qiime2/2022.8
+
+# getting demux.qza 
+qiime tools import \
+  --type 'SampleData[PairedEndSequencesWithQuality]' \
+  --input-path tinkermanifest.txt \
+  --output-path paired-end-demux-tinker.qza \
+  --input-format PairedEndFastqManifestPhred33V2
+
+# and .qzv file 
+qiime demux summarize \
+  --i-data paired-end-demux-tinker.qza \
+  --o-visualization paired-end-demux-tinker.qzv
+
+# Run dada2 
+vim tinkerdada2.sh
+
+#!/bin/bash
+#SBATCH -J dada2
+#SBATCH --mail-type=ALL
+#SBATCH -A p31966
+#SBATCH --mail-user=collegiatesuzuki2025@u.northwestern.edu
+#SBATCH -N 1
+#SBATCH -n 6
+#SBATCH --mem=24G
+#SBATCH -t 48:00:00
+#SBATCH -p normal
+#SBATCH --output=output.log  
+
+module purge all
+module load qiime2/2022.8 
+
+qiime dada2 denoise-paired \
+--i-demultiplexed-seqs paired-end-demux-tinker.qza \
+--p-trunc-len-f 150 \
+--p-trunc-len-r 150 \
+--p-trim-left-f 0 \
+--p-trim-left-r 0 \
+--p-n-threads 0 \
+--o-representative-sequences rep-seqs-dada-tinker.qza \
+--o-table table-tinker.qza \
+--o-denoising-stats stats-dada-tinker.qza
+
+echo "Finishing dada2 job"
+
+:wq
+chmod u+x tinkerdada2.sh
+sbatch tinkerdada2.sh
+
+# moving the folder to directory
+mkdir /projects/p31966/tinker
+mv tinker/* /projects/p31966/tinker
